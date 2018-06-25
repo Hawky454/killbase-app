@@ -1,0 +1,9 @@
+/* font-family: 'Special Elite', cursive; */
+/* font-family: 'Eater', cursive;  */
+body {
+  background-image: url('https://www.planwallpaper.com/static/images/abstract_colorful_textures_widescreen_desktop_background_picture-331.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: left top;
+  color: white;
+}

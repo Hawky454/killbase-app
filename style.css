@@ -1,12 +1,14 @@
 /* font-family: 'Special Elite', cursive; */
+
 /* font-family: 'Eater', cursive;  */
+
 /* font-family: 'Chelsea Market', cursive; */
+
 /* font-family: 'Fontdiner Swanky', cursive; */
+
 * {
   /* border: 2px solid white; */
 }
-
-
 
 body {
   background-image: url('https://www.planwallpaper.com/static/images/abstract_colorful_textures_widescreen_desktop_background_picture-331.jpg');
@@ -39,31 +41,29 @@ body {
 main {
   display: flex;
   justify-content: flex-start;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 20px;
-
 }
 
 .ass-img {
   border-radius: 5px;
   width: 400px;
-  height: 500px;
+  height: 400px;
   margin-right: 40px;
   margin-bottom: 10px;
-
 }
 
 .cont-img {
   border-radius: 5px;
   width: 400px;
-  height: 500px;
+  height: 400px;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
 main button {
-  text-decoration: none;
   background: transparent;
+  /* border: none; */
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -72,4 +72,8 @@ main button {
   margin-left: 30%;
   margin-bottom: 50px;
   margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
 }

@@ -3,8 +3,10 @@
 /* font-family: 'Chelsea Market', cursive; */
 /* font-family: 'Fontdiner Swanky', cursive; */
 * {
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
+
+
 
 body {
   background-image: url('https://www.planwallpaper.com/static/images/abstract_colorful_textures_widescreen_desktop_background_picture-331.jpg');
@@ -12,18 +14,13 @@ body {
   background-repeat: repeat;
   background-position: left top;
   color: white;
+  font-family: monospace;
 }
 
 .header {
   display: flex;
   justify-content: start;
-
   margin: 20px;
-}
-
-a .ass-img {
-  width: 400px;
-  height: 500px;
 }
 
 .logo {
@@ -41,17 +38,38 @@ a .ass-img {
 
 main {
   display: flex;
-
+  justify-content: flex-start;
   margin-top: 100px;
+  margin-left: 20px;
 
 }
 
-/* .assassins {
+.ass-img {
+  border-radius: 5px;
   width: 400px;
   height: 500px;
-} */
+  margin-right: 40px;
+  margin-bottom: 10px;
 
-/* .contracts {
+}
+
+.cont-img {
+  border-radius: 5px;
   width: 400px;
   height: 500px;
-} */
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+main button {
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+  margin-left: 30%;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}

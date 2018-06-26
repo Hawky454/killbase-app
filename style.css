@@ -127,22 +127,34 @@ main a {
 
 .form-new {
   width: 100%;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   display: flex;
   flex-direction: row;
+  margin-top: 100px;
 }
 
 .left {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  width: 45%;
-  height: 100%;
+  /* width: 45%; */
+  margin-left: 250px;
 }
 
 .right {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
-  width: 45%;
+  /* width: 45%; */
+  margin-left: 50px;
+}
+
+label {
+  font-size: 24px;
+}
+.add-btn {
+  font-size: 24px;
+  width: 180px;
+  margin-left: 0;
+  box-shadow: 8px 8px black;
 }

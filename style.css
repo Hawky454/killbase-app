@@ -5,7 +5,7 @@
 /* font-family: 'Chelsea Market', cursive; */
 
 /* font-family: 'Fontdiner Swanky', cursive; */
-
+/* font-family: 'Belgrano', serif; */
 * {
   /* border: 2px solid white; */
 }
@@ -16,7 +16,7 @@ body {
   background-repeat: repeat;
   background-position: left top;
   color: white;
-  font-family: monospace;
+  font-family: monospace, sans-serif;
 }
 
 .header {
@@ -51,6 +51,7 @@ main {
   height: 400px;
   margin-right: 40px;
   margin-bottom: 10px;
+  box-shadow: 10px 10px black;
 }
 
 .cont-img {
@@ -59,6 +60,7 @@ main {
   height: 400px;
   margin-left: 20px;
   margin-bottom: 10px;
+  box-shadow: 10px 10px black;
 }
 
 main button {
@@ -73,17 +75,19 @@ main button {
   margin-bottom: 50px;
   margin-top: 10px;
 }
+/* the below code gets rid of blue border on buttons */
+button:focus {
+  outline: 0;
+}
 
-a {
+main a {
   text-decoration: none;
+  border: none;
 }
 
 /* assassins page */
 
 .header button {
-  /* border: 2px solid red; */
-  height: 25px;
-  width: 150px;
   font-weight: bold;
   font-size: 24px;
   padding: 20px;
@@ -92,9 +96,21 @@ a {
   border: none;
   background: transparent;
   color: white;
+  font-family: 'Belgrano', serif;
+}
+
+.header a {
+  padding: 5px;
+  padding-top: 10px;
+  text-decoration: none;
 }
 
 .top-buttons {
   margin-left: 30%;
   padding-top: 42px;
+
 }
+
+.active {
+  border: 2px solid red;
+  /* padding: 10px; */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Eater|Fontdiner+Swanky|Special+Elite" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Enter New Assassin</title>
+</head>
+
+<body>
+  <header class="header">
+    <!-- top left -->
+    <img class="logo" src="./images/kb-logo.png" alt="logo">
+    <p class="log-text">KILLBASE</p>
+    <!-- top right -->
+    <section class="top-buttons">
+      <a href="assassins.html"><button type="button" name="button">Assassins</button></a>
+      <a href="contracts.html" alt="link to contracts."><button type="button" name="button">Contracts</button></a>
+    </section>
+  </header>
+
+  <!-- start here -->
+  <main>
+    <form class="form-new" action="index.html" method="post">
+      <section class="left">
+        <label for="name">Name:</label>
+        <input class="long" type="text" name="name" value="">
+        <label for="codenames">Codenames (comma seperated):</label>
+        <input class="long" type="text" name="codenames" value="">
+        <label for="profile-image-URL">Profile Image URL:</label>
+        <input class="long" type="url" name="profile-image-URL" value="">
+        <label for="weapon">Weapon of Choice:</label>
+        <input class="long" type="text" name="weapon" value="">
+        <label for="contact">Contact info:</label>
+        <input class="long"type="email" name="contact" value="">
+        <button id="submit" type="submit" name="submit">Add Assassin</button>
+      </section>
+      <section class="right">
+        <label for="age"><input class="short" type="number" name="age" value="">Age:</label>
+        <label for="price"><input class="short" type="number" name="Price" value="">Price:</label>
+        <label for="rating"><input class="short" type="number" name="rating" value="" min="0" max="10">Rating:</label>
+        <label for="kills"><input class="short" type="number" name="kills" value="">Kills:</label>
+      </section>
+    </form>
+  </main>
+  <!-- end here -->
+
+
+  <script type="text/javascript" src="main.js">
+  </script>
+</body>
+
+</html>

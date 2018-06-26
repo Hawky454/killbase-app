@@ -120,3 +120,29 @@ main a {
 .active {
   border-bottom: 1px solid red;
   /* padding: 10px; */
+}
+
+  /* assassins_new.html page */
+
+
+.form-new {
+  width: 100%;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+}
+
+.right {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}

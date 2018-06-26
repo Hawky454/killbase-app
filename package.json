@@ -1,0 +1,24 @@
+{
+  "name": "killbase-app",
+  "version": "1.0.0",
+  "description": "**Killbase** is a service that allows international assassins and their clients to create, book, and execute contracts. You are building a web app for them. It should allow you to:",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hawky454/killbase-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hawky454/killbase-app/issues"
+  },
+  "homepage": "https://github.com/Hawky454/killbase-app#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

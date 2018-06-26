@@ -5,7 +5,9 @@
 /* font-family: 'Chelsea Market', cursive; */
 
 /* font-family: 'Fontdiner Swanky', cursive; */
+
 /* font-family: 'Belgrano', serif; */
+
 * {
   /* border: 2px solid white; */
 }
@@ -23,6 +25,7 @@ body {
   display: flex;
   justify-content: start;
   margin: 20px;
+  width: 1400px;
 }
 
 .logo {
@@ -75,7 +78,9 @@ main button {
   margin-bottom: 50px;
   margin-top: 10px;
 }
+
 /* the below code gets rid of blue border on buttons */
+
 button:focus {
   outline: 0;
 }
@@ -90,7 +95,7 @@ main a {
 .header button {
   font-weight: bold;
   font-size: 24px;
-  padding: 20px;
+  /* padding: 20px; */
   line-height: 0.1;
   text-decoration: none;
   border: none;
@@ -107,10 +112,11 @@ main a {
 
 .top-buttons {
   margin-left: 30%;
-  padding-top: 42px;
-
+  padding-top: 60px;
+  padding-left: 60px;
+  width: 400px;
 }
 
 .active {
-  border: 2px solid red;
+  border-bottom: 1px solid red;
   /* padding: 10px; */

@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
     table.string('target_location');
     table.string('target_photo');
     table.string('target_security');
-})
+  });
 };
 
 

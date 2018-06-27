@@ -3,15 +3,15 @@
 module.exports = {
 
   development: {
-     client: 'pg',
-     connection: 'postgres://localhost/killbase2'
-   },
+    client: 'pg',
+    connection: 'postgres://localhost/killbase2'
+  },
 
   staging: {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
+      user: 'username',
       password: 'password'
     },
     pool: {
@@ -27,7 +27,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
+      user: 'username',
       password: 'password'
     },
     pool: {

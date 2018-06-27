@@ -3,7 +3,7 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTable('clients', function(table) {
     table.increments();
     table.string('clients_name');
-  })
+  });
 };
 
 

@@ -3,7 +3,7 @@ exports.seed = function(knex, Promise) {
   return knex('code_names').del()
     .then(function () {
       // Inserts seed entries
-      return knex('code_name').insert([
+      return knex('code_names').insert([
         {assassins_id: 1, code_name: 'The Jackal'},
         {assassins_id: 2, code_name: 'Old Man'},
         {assassins_id: 3, code_name: 'Ghost Dog'},

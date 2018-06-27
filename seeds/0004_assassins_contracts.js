@@ -12,11 +12,7 @@ exports.seed = function(knex, Promise) {
         {assassins_id: 6, contracts_id: 4},
         {assassins_id: 8, contracts_id: 3},
         {assassins_id: 6, contracts_id: 1},
-        {assassins_id: 3, contracts_id: 1},
+        {assassins_id: 3, contracts_id: 1}
       ]);
     });
 };
-
-
-
-      

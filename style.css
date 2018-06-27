@@ -10,6 +10,7 @@
 
 * {
   /* border: 2px solid white; */
+  /* width: 80%; */
 }
 
 body {
@@ -80,7 +81,6 @@ main button {
 }
 
 /* the below code gets rid of blue border on buttons */
-
 button:focus {
   outline: 0;
 }
@@ -91,11 +91,9 @@ main a {
 }
 
 /* assassins page */
-
 .header button {
   font-weight: bold;
   font-size: 24px;
-  /* padding: 20px; */
   line-height: 0.1;
   text-decoration: none;
   border: none;
@@ -119,22 +117,17 @@ main a {
 
 .active {
   border-bottom: 1px solid red;
-  /* padding: 10px; */
 }
 
-  /* assassins_new.html page */
-
-
+/* assassins_new.html page */
 .form-new {
   width: 100%;
-  /* border: 2px solid white; */
   display: flex;
   flex-direction: row;
   margin-top: 100px;
 }
 
 .left {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   /* width: 45%; */
@@ -142,7 +135,6 @@ main a {
 }
 
 .right {
-  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   /* width: 45%; */
@@ -151,7 +143,10 @@ main a {
 
 label {
   font-size: 24px;
+  padding-bottom: 5px;
+  padding-top: 20px;
 }
+
 .add-btn {
   font-size: 24px;
   width: 180px;

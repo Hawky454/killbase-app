@@ -8,7 +8,7 @@ exports.up = function(knex, Promise) {
     table.foreign('client_id').references('clients.id').onDelete('CASCADE');
     table.integer('budget');
     table.boolean('completed').notNullable().defaultTo(false);
-    table.integer('assassin_id').notNullable();
+    table.integer('assassin_id'); //took out notNullAble();
     table.foreign('assassin_id').references('assassins.id').onDelete('CASCADE');
   });
 };

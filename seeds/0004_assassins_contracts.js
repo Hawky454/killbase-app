@@ -5,36 +5,36 @@ exports.seed = function(knex, Promise) {
     .then(function() {
       // Inserts seed entries
       return knex('assassins_contracts').insert([{
-          assassins_id: 6,
-          contracts_id: 1
+          assassin_id: 6,
+          contract_id: 1
         },
         {
-          assassins_id: 1,
-          contracts_id: 2
+          assassin_id: 1,
+          contract_id: 2
         },
         {
-          assassins_id: 7,
-          contracts_id: 3
+          assassin_id: 7,
+          contract_id: 3
         },
         {
-          assassins_id: 9,
-          contracts_id: 5
+          assassin_id: 9,
+          contract_id: 5
         },
         {
-          assassins_id: 6,
-          contracts_id: 4
+          assassin_id: 6,
+          contract_id: 4
         },
         {
-          assassins_id: 8,
-          contracts_id: 3
+          assassin_id: 8,
+          contract_id: 3
         },
         {
-          assassins_id: 6,
-          contracts_id: 1
+          assassin_id: 6,
+          contract_id: 1
         },
         {
-          assassins_id: 3,
-          contracts_id: 1
+          assassin_id: 3,
+          contract_id: 1
         }
       ]);
     });

@@ -1,5 +1,6 @@
+let env = process.env.NODE_ENV || 'development';
 let router = require('express').Router();
-let config = require('../knexfile.js')['production'];
+let config = require('../knexfile.js')[env];
 let knex = require('knex')(config);
 
 router.get('/assassins', (req, res, next) => {

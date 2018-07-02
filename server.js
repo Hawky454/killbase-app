@@ -14,6 +14,8 @@ let morgan = require('morgan');
 let config = require(knexPath)[env];
 let knex = require('knex')(config);
 let assassins = require('./routes/assassinroutes.js');
+console.log(env);
+console.log(config);
 
 app.disable('x-powered-by');
 app.use(morgan('short'));

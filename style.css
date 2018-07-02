@@ -9,7 +9,7 @@
 /* font-family: 'Belgrano', serif; */
 
 * {
-  /* border: 2px solid white; */
+  /* border: 1px solid white; */
 }
 
 body {
@@ -26,6 +26,7 @@ body {
   justify-content: start;
   margin: 20px;
   width: 1400px;
+  /* position: fixed; */
 }
 
 .logo {
@@ -34,19 +35,20 @@ body {
   margin-top: 10px;
 }
 
-.log-text {
+.logo-text {
   font-family: 'Fontdiner Swanky', cursive;
-  letter-spacing: .7em;
+  letter-spacing: .6em;
   font-size: 40px;
   padding-left: 30px;
+  margin-top: 55px;
 }
 
-/* main {
+.front-page {
   display: flex;
   justify-content: flex-start;
   margin-top: 50px;
-  margin-left: 20px;
-} */
+  margin-left: 150px;
+}
 
 .ass-img {
   border-radius: 5px;
@@ -161,3 +163,9 @@ label {
   padding: 5px;
   border-radius: 5px;
 }
+
+/* .title {
+  margin-top: 100px;
+  margin-left: 190px;
+
+} */

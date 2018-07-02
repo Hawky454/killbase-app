@@ -7,7 +7,7 @@ let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
 let port = process.env.PORT || 8000;
-let env = 'development';
+let env = process.env.NODE_ENV || 'development';
 let morgan = require('morgan');
 
 

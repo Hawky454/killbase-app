@@ -14,8 +14,9 @@ let morgan = require('morgan');
 let config = require(knexPath)[env];
 let knex = require('knex')(config);
 let assassins = require('./routes/assassinroutes.js');
-console.log(env);
-console.log(config);
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.disable('x-powered-by');
 app.use(morgan('short'));
@@ -25,9 +26,9 @@ app.use(express.static(path.join('public')));
 
 //don't change code above this line.
 
-app.get('/', (req, res, next) => {
-    res.sendFile('index.html');
-})
+// app.get('/', (req, res, next) => {
+//     res.sendFile('index.html');
+// })
 
 app.use(assassins);
 // app.use(contracts);

@@ -4,7 +4,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://8.8.8.8/killbase2'
+    connection: 'postgres://localhost/killbase2'
   },
 
 

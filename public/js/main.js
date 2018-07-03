@@ -1,7 +1,14 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-fetch(`http://localhost:8000/assassins`)
+fetch(`/assassins`)
       .then(response => response.json())
       .then(data => {
-        console.log(data);
+        let assData = data.results;
+
+        for(let i = 0; i < addData.length; i++) {
+
+          let assassins = assData[i];
+          let assCard = document.createElement('section');
+          
+        }
       });
     });

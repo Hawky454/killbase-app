@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
     table.string('weapon');
     table.integer('age');
     table.integer('price');
-    table.float('rating', 2, 1); //always do 2,1 when you don't want their rating to go over two digits before the decimal and 2 after.
+    table.float('rating', 2, 1); 
     table.integer('kills');
   });
 };

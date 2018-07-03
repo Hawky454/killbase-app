@@ -5,12 +5,12 @@ let knex = require('knex')(config);
 
 
 router.get('/assassins', (req, res, next) => {
+  console.log("we got to the route");
   knex('assassins')
     .orderBy('id')
     .then((assassins) => {
-      res.render('assassins', {
-        data: assassins
-      });
+      console.log(assassins);
+      res.send(assassins);
     })
     .catch((err) => {
       next(err);

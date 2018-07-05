@@ -6,9 +6,10 @@ fetch('/assassins/')
         console.log(assData[0]);
         for(let i = 0; i < assData.length; i++) {
 
-          let displayCard = document.getElementById('displayCard');
+          let assassinsList = document.getElementById('assassins-list');
           let assassins = assData[i];
           let assassCard = document.createElement('section');
+          assassCard.setAttribute('class', 'assassins-card');
           let row1 = document.createElement('section');
           row1.setAttribute('class', 'row1');
 //testing this out.
@@ -28,53 +29,52 @@ fetch('/assassins/')
           let assassinWeapon = document.createElement('span');
           let assassinPrice = document.createElement('span');
           let assassinImage = document.createElement('img');
-          let assassinEmail = document.createElement('a');
+          let assassinEmail = document.createElement('span');
           let assassinRating = document.createElement('span');
           let editButton = document.createElement('button');
           let deleteButton = document.createElement('button');
           let codeName = document.createElement('span');
 
-
-          assassinRating.innerHTML = `Rating: ${assassins.rating} `;
-          assassinKills.innerHTML = `Kills: ${assassins.kills} `;
-          assassinName.innerText = `Name: ${assassins.fullnames} `;
-          assassinAge.innerText = `Age: ${assassins.age} `;
-          assassinId.innerHTML = `ID: ${assassins.id} `;
-          assassinWeapon.innerHTML = `Weapon: ${assassins.weapon} `;
-          assassinImage.setAttribute('src', '/images/assassin.jpg');
-          assassinPrice.innerHTML = `Price: ${assassins.price} `;
+          codeName.innerText = ` Codename: ${assassins.codenames} `;
+          assassinRating.innerText = ` Rating: ${assassins.rating} `;
+          assassinKills.innerText = ` Kills: ${assassins.kills} `;
+          assassinName.innerText = assassins.fullnames ;
+          assassinAge.innerText = ` Age: ${assassins.age} `;
+          assassinId.innerText = ` ID: ${assassins.id} `;
+          assassinWeapon.innerText = ` Weapon: ${assassins.weapon} `;
+          assassinImage.setAttribute('src', assassins.photo );
+          assassinPrice.innerText = ` Price: ${assassins.price} `;
           editButton.setAttribute('class', 'edit-btn');
-          editButton.innerHTML = 'Edit';
-          editButton.style.color = 'black';
+          editButton.innerText = 'Edit';
+          editButton.style.color = 'blue';
           deleteButton.setAttribute('id', 'delete-btn');
-          deleteButton.innerHTML = 'Delete';
-          deleteButton.style.color = 'black';
+          deleteButton.innerText = 'Delete';
+          deleteButton.style.color = 'red';
           assassCard.setAttribute('class', 'assassCard');
-          assassinEmail.setAttribute('href', '#');
-          assassinEmail.innerHtml = 'assassin@email.com';
+          assassinEmail.innerText = ` Contact: ${assassins.contact} `;
 
-// testing this out
-          row1.append(assassinImage);
-          row2.append(assassinName);
-          row2.append(assassinRating);
-          row2.append(assassinPrice);
-          row2.append(assassinWeapon);
-          row2.append(assassinEmail);
 
-          displayCard.appendChild(row1);
-          displayCard.appendChild(row2);
 
-          // assassCard.append(assassinImage);
-          // assassCard.append(assassinName);
-          // assassCard.append(assassinRating);
-          // assassCard.append(assassinAge);
-          // assassCard.append(assassinKills);
-          // assassCard.append(assassinId);
-          // assassCard.append(assassinWeapon);
-          // assassCard.append(assassinPrice);
-          // assassCard.append(editButton);
-          // assassCard.append(deleteButton);
-          // displayCard.append(assassCard);
+          row1.appendChild(assassinImage);
+
+          row2.appendChild(assassinName);
+          row2.appendChild(assassinRating);
+          row2.appendChild(assassinPrice);
+          row2.appendChild(assassinWeapon);
+          row2.appendChild(assassinEmail);
+
+          row3.appendChild(codeName);
+          row3.appendChild(assassinKills);
+          row3.appendChild(assassinAge);
+
+          row4.appendChild(deleteButton);
+          row4.appendChild(editButton);
+
+          assassCard.appendChild(row1);
+          assassCard.appendChild(row2);
+          assassCard.appendChild(row3);
+          assassCard.appendChild(row4);
+          assassinsList.appendChild(assassCard);
         }
       });
     });

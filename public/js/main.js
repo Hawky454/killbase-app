@@ -54,11 +54,9 @@ fetch('/assassins/')
           assassinEmail.innerText = ` Contact: ${assassins.contact} `;
 
           if(assassinName.innerText === '') {
-            assassinName.innerText = 'secret message';
+            assassinName.innerText = 'Forest Whitaker';
             assassinName.style.color = 'white';
           }
-
-          console.log(assassinName.innerText);
 
 
 

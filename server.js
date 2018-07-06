@@ -14,6 +14,7 @@ let morgan = require('morgan');
 let config = require(knexPath)[env];
 let knex = require('knex')(config);
 let assassins = require('./routes/assassinroutes.js');
+let contracts = require('./routes/contractroutes.js');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -31,7 +32,7 @@ app.use(express.static(path.join('public')));
 // })
 
 app.use(assassins);
-// app.use(contracts);
+app.use(contracts);
 
 
 app.use((_req, res) => {

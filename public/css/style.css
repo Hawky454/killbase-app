@@ -167,6 +167,7 @@ label {
 
 .title {
   margin-left: 100px;
+  color: red;
 }
 
 /* below is all js populated assassin cards */
@@ -178,7 +179,7 @@ label {
 .assassCard {
   display: flex;
   color: black;
-  width: 80%;
+  width: 76%;
   border-radius: 5px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -200,7 +201,6 @@ label {
 
 .row2 h2 {
   color: red;
-  border: 1px solid red;
   width: 289px;
   margin-top: 5px;
   margin-right: 10px;
@@ -209,12 +209,25 @@ label {
 .row3 {
   display: flex;
   flex-direction: column;
+  margin-top: 84px;
+  margin-left: 20px;
+  /* play around with the top and left margin... I'm on the train now and the internet is really screwy. */
 }
 
 .row4 {
   display: flex;
   flex-direction: row;
 
+}
+
+#delete-btn {
+  margin-right: 0;
+  border: none;
+}
+#edit-btn {
+  margin-left: 0;
+  border: none;
+  /* margin-right: 0; */
 }
 
 img {

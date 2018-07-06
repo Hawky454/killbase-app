@@ -44,7 +44,7 @@ fetch('/assassins/')
           assassinWeapon.innerText = ` Weapon: ${assassins.weapon} `;
           assassinImage.setAttribute('src', assassins.photo );
           assassinPrice.innerText = ` Price: ${assassins.price} `;
-          editButton.setAttribute('class', 'edit-btn');
+          editButton.setAttribute('id', 'edit-btn');
           editButton.innerText = 'Edit';
           editButton.style.color = 'blue';
           deleteButton.setAttribute('id', 'delete-btn');
@@ -52,6 +52,13 @@ fetch('/assassins/')
           deleteButton.style.color = 'red';
           assassCard.setAttribute('class', 'assassCard');
           assassinEmail.innerText = ` Contact: ${assassins.contact} `;
+
+          if(assassinName.innerText === '') {
+            assassinName.innerText = 'secret message';
+            assassinName.style.color = 'white';
+          }
+
+          console.log(assassinName.innerText);
 
 
 
